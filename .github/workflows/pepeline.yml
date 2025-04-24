@@ -1,0 +1,23 @@
+name: Pipeline de Pull Request
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checando o código
+        uses: actions/checkout@v3
+
+      - name: iniciando 
+        run: echo "começando"
+
+      - name: desenvolvendo
+        run: echo "desenvolvimento em andamento"
+
+      - name: final 
+        run: echo "iniciado, desenvolvido finalizado"
